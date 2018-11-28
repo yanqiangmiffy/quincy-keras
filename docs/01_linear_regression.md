@@ -1,21 +1,19 @@
 ## keras 损失函数
 
 - mean_squared_error
-`mean_squared_error(y_true, y_pred)`
 - mean_absolute_error
-`mean_absolute_error(y_true, y_pred)`
 - mean_absolute_percentage_error
-`mean_absolute_percentage_error(y_true, y_pred)`
 - mean_squared_logarithmic_error
-`mean_squared_logarithmic_error(y_true, y_pred)`
 - squared_hinge
-`squared_hinge(y_true, y_pred)`
 - hinge
-`hinge(y_true, y_pred)`
 - categorical_hinge
-`categorical_hinge(y_true, y_pred)`
 - logcosh
-`logcosh(y_true, y_pred)`
+- categorical_crossentropy
+- sparse_categorical_crossentropy
+- binary_crossentropy
+- kullback_leibler_divergence
+- poisson
+- cosine_proximity
 
 ## 预定义激活函数
 - softmax：对输入数据的最后一维进行softmax，输入数据应形如(nb_samples, nb_timesteps, nb_dims)或(nb_samples,nb_dims)
