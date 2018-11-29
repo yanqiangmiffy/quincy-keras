@@ -2,3 +2,4 @@
 *.zip
 .git/
 .ipynb_checkpoints/
+code/logs
