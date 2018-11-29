@@ -18,13 +18,11 @@ from keras import backend as K
 
 # 参数设置
 batch_size=128
-n_epoch=100
+n_epoch=10
 n_classes=10
 
 # 图片维度
 img_rows,img_cols=28,28
-# 过滤器个数
-n_filters=32
 # max pooling大小
 pool_size=(2,2)
 
@@ -61,17 +59,17 @@ print(X_test.shape[0],"test samples")
 model=Sequential()
 
 # conv1 layer
-model.add(Conv2D(n_filters=32,kernel_size=(3,3),padding='same',activation='relu',input_shape=input_shape))
+model.add(Conv2D(filters=32,kernel_size=(3,3),padding='same',activation='relu',input_shape=input_shape))
 model.add(MaxPooling2D(pool_size=pool_size,strides=(2,2),padding='same'))
 model.add(Dropout(prob_drop_conv))
 
 # conv2 layer
-model.add(Conv2D(n_filters=64,kernel_size=(3,3),padding='same',activation='relu'))
+model.add(Conv2D(filters=64,kernel_size=(3,3),padding='same',activation='relu'))
 model.add(MaxPooling2D(pool_size=pool_size,strides=(2,2),padding='same'))
 model.add(Dropout(prob_drop_conv))
 
 # conv3 layer
-model.add(Conv2D(n_filters=128,kernel_size=(3,3),padding='same',activation='relu'))
+model.add(Conv2D(filters=128,kernel_size=(3,3),padding='same',activation='relu'))
 model.add(MaxPooling2D(pool_size=pool_size,strides=(2,2),padding='same'))
 model.add(Flatten())
 model.add(Dropout(prob_drop_conv))
@@ -87,8 +85,9 @@ opt=RMSprop(lr=0.01,rho=0.9)
 model.compile(optimizer=opt, loss='categorical_crossentropy',metrics=['accuracy'])
 
 # 训练
-history=model.fit(X_train,y_train,batch_size=256,verbose=1)
+history=model.fit(X_train,y_train,epochs=n_epoch,batch_size=256,verbose=1)
 
 # 评估模型
 evaluation=model.evaluate(X_test,y_test,batch_size=256,verbose=1)
 print("Summary: Loss over the test dataset:%.2f,Accuracy:%.2f" % (evaluation[0],evaluation[1]))
+# Summary: Loss over the test dataset:0.10,Accuracy:0.98
