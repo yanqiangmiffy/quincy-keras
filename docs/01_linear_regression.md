@@ -26,3 +26,21 @@
 - sigmoid
 - hard_sigmoid：Hard sigmoid 激活函数，计算速度比 sigmoid 激活函数更快。
 - linear：线性激活函数（即不做任何改变）
+
+## 可视化
+
+- 方法1：
+```text
+以下实例，将绘制一张模型图，并保存为文件：
+
+from keras.utils import plot_model
+plot_model(model, to_file='model.png')
+```
+
+- 方法2：
+
+```text
+from IPython.display import SVG
+from keras.utils.vis_utils import model_to_dot
+SVG(model_to_dot(model,show_shapes=True).create(prog='dot', format='svg'))
+```
