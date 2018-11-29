@@ -10,9 +10,9 @@ keras框架学习资料/教程
 * Deep Feedforward Neural Network (Multilayer Perceptron with 2 Hidden Layers)   深度神经网络（两层感知机）([code](https://github.com/yanqiangmiffy/quincy-keras/blob/master/code/04_modern_net.py), [notebook](https://github.com/yanqiangmiffy/quincy-keras/blob/master/notebook/04_modern_net.ipynb))
 * Convolutional Neural Network  卷积神经网络([code](https://github.com/yanqiangmiffy/quincy-keras/blob/master/code/05_convolutional_net.py), [notebook](https://github.com/yanqiangmiffy/quincy-keras/blob/master/notebook/05_convolutional_net.ipynb))
 * Denoising Autoencoder ([code](https://github.com/yanqiangmiffy/quincy-keras/blob/master/code/06_autoencoder.py), [notebook](https://github.com/yanqiangmiffy/quincy-keras/blob/master/notebook/06_denoising%20autoencoder.ipynb))
-* Recurrent Neural Network (LSTM) ([code](https://github.com/yanqiangmiffy/quincy-keras/blob/master/code/07_lstm.py), [notebook](https://github.com/yanqiangmiffy/quincy-keras/blob/master/notebook/07_lstm.ipynb))
-* TensorBoard([code](https://github.com/yanqiangmiffy/quincy-keras/blob/master/code/08_tensorboard.py), [notebook](https://github.com/yanqiangmiffy/quincy-keras/blob/master/notebook/08_tensorboard.ipynb))
-* Save and restore net([code](https://github.com/yanqiangmiffy/quincy-keras/blob/master/code/09_save_restore_net.py), [notebook](https://github.com/yanqiangmiffy/quincy-keras/blob/master/notebook/09_save_restore_net.ipynb))
+* Recurrent Neural Network (LSTM) LSTM文本分类([code](https://github.com/yanqiangmiffy/quincy-keras/blob/master/code/07_lstm.py), [notebook](https://github.com/yanqiangmiffy/quincy-keras/blob/master/notebook/07_lstm.ipynb))
+* TensorBoard TensorBoard的使用([code](https://github.com/yanqiangmiffy/quincy-keras/blob/master/code/08_tensorboard.py), [notebook](https://github.com/yanqiangmiffy/quincy-keras/blob/master/notebook/08_tensorboard.ipynb))
+* Save and restore net 保存和恢复模型([code](https://github.com/yanqiangmiffy/quincy-keras/blob/master/code/09_save_restore_net.py), [notebook](https://github.com/yanqiangmiffy/quincy-keras/blob/master/notebook/09_save_restore_net.ipynb))
 
 
 ## 注意的问题
