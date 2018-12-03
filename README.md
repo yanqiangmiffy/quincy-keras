@@ -14,7 +14,8 @@ keras框架学习资料/教程
 * TensorBoard TensorBoard的使用([code](https://github.com/yanqiangmiffy/quincy-keras/blob/master/code/08_tensorboard.py), [notebook](https://github.com/yanqiangmiffy/quincy-keras/blob/master/notebook/08_tensorboard.ipynb))
 * Save and restore net 保存和恢复模型([code](https://github.com/yanqiangmiffy/quincy-keras/blob/master/code/09_save_restore_net.py), [notebook](https://github.com/yanqiangmiffy/quincy-keras/blob/master/notebook/09_save_restore_net.ipynb))
 
-
+## NLP任务
+- 基于孪生网络的语义相似性判定 [sentence-similarity](https://github.com/yanqiangmiffy/sentence-similarity)
 ## 注意的问题
 
 1.如果在notebook使用GPU训练模型，结束后需要将notebook关闭(shutdown)，否则在另一个运行程序的时候会内存错误
