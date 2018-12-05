@@ -16,6 +16,8 @@ keras框架学习资料/教程
 
 ## NLP任务
 - 基于孪生网络的语义相似性判定 [sentence-similarity](https://github.com/yanqiangmiffy/sentence-similarity)
+## 图像任务
+- 手写藏文字体分类与识别 [tibetan-mnist](https://github.com/yanqiangmiffy/tibetan-mnist)
 ## 注意的问题
 
 1.如果在notebook使用GPU训练模型，结束后需要将notebook关闭(shutdown)，否则在另一个运行程序的时候会内存错误
